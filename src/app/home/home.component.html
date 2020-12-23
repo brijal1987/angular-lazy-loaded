@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="">Search Post</h1>
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <div *ngIf="this.errorMsg" class="alert alert-danger">
+                {{this.errorMsg}}
+            </div>
+            <form [formGroup]="postForm" #formDir="ngForm" (ngSubmit)="onSend()" id="formID">
+
+                <div class="form-group">
+                    <label for="id" class="control-label">Id* </label>
+                    <input class="form-control" type="number" formControlName="id" required placeholder="Search By ID">
+                    <div *ngIf="id && id.invalid && (id.dirty || id.touched)" class="alert alert-danger">
+                        <div *ngIf="id && id.errors && id.errors.required">
+                            ID is required
+                        </div>
+                        <div *ngIf="id && id.errors && id.errors.pattern">Enter only number.</div>
+                    </div>
+                </div>
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Send</button>
+                <button (click)="onReset()" class="btn btn-danger m-2 my-2 my-sm-0" type="button">Reset</button>
+            </form>
+        </div>
+    </div>
+  </div>

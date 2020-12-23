@@ -1,0 +1,13 @@
+<a routerLink="/">Back to Home</a>
+<hr/>
+<p class="lead">Post details is given below</p>
+<div class="grid grid-pad">
+    <div *ngIf="post!==undefined" class="module post">
+      <h4>Post ID</h4>
+      <p>{{post.id}}</p>
+      <h4>Title</h4>
+      <p>{{post.title | titlecase}}</p>
+      <h4>Body</h4>
+      <p>{{post.body}}</p>
+    </div>
+</div>
