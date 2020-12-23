@@ -1,9 +1,36 @@
-# angular-lazy-loaded
-Run `git clone https://github.com/brijal1987/angular-lazy-loaded.git` to Clone repo
+# Installation
 
-## Development server
+#### Backend - nest-js-backend `https://github.com/brijal1987/nest-js-backend`
+```bash
+$ git clone https://github.com/brijal1987/nest-js-backend.git
+$ cd nest-js-backend
+$ npm install
+```
+#### Running the backend server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+# development
+$ npm run start
+```
+
+Server will run on`http://127.0.0.1:3000/`
+
+
+#### Frontend - angular-lazy-loaded
+```bash
+$ git clone https://github.com/brijal1987/angular-lazy-loaded.git
+$ cd angular-lazy-loaded
+$ npm install
+```
+
+#### Running the app
+
+```bash
+$ ng serve
+```
+
+#### Change API_URL with `backend api URL` in `angular-lazy-loaded/src/app/constants/index.ts` 
+API_URL = 'http://127.0.0.1:3000/'
 
 ## Build
 
