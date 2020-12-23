@@ -1,6 +1,6 @@
 # Installation
 
-#### [Backend - nest-js-backend](#https://github.com/brijal1987/nest-js-backend)
+#### [Backend - nest-js-backend](https://github.com/brijal1987/nest-js-backend)
 
 ```bash
 $ git clone https://github.com/brijal1987/nest-js-backend.git
